@@ -1,5 +1,5 @@
 # Credits to Faishal Shabaz for the code
-https://medium.com/datadriveninvestor/five-powerful-cnn-architectures-b939c9ddd57b
+#https://medium.com/datadriveninvestor/five-powerful-cnn-architectures-b939c9ddd57b
     
 from keras import layers
 from keras.models import Model
@@ -139,6 +139,10 @@ def resnet152(in_shape=(224,224,3), n_classes=1000, opt='sgd'):
                   [256, 512, 1024, 2048],
                   [3, 8, 36, 3],
                   convx_w_bottleneck)
+
+def load_trained_model(weights_path):
+    model = create_model()
+    model.load_weights(weights_path)
 
 if __name__ == '__main__':
     model = resnet50()
