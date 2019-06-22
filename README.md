@@ -1,8 +1,11 @@
 # Grab-AI-Computer-Vision-Challenge
 
-I did not managed to finish the script for you to upload test dataset to validate the model.
-Anyway, Grab AI Computer Vision Challenge.ipynb shows how I clean, explore the data and train the model.
-I am using ResNet18 model.
+Grab AI Computer Vision Challenge.ipynb shows how I clean, explore the data and train the model.
+I am using ResNet34 model.
 
 Model weight still training in progress. Below is current trained model weight with 40% validation accuracy.
-Model weight link: https://drive.google.com/open?id=1iV28s5azy_6g6jhneqTDOtzoWiH4bjN_
+Model weight link: https://drive.google.com/open?id=1bAsH38O1aY5oWb_GBKGUtHa4Vztj4Jkt
+
+Grab AI Computer Vision Challenge.ipynb shows how to import, clean data and create, train ResNet34 model.
+resnet.py has the code for ResNet architecture.
+Predict.py allows you to choose the directory of images and predict the car model make & model.
