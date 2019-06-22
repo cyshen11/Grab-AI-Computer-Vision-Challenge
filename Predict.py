@@ -18,16 +18,22 @@ meta_df = pd.DataFrame(meta, columns = ["Car Make"])
 
 # Load model
 model = resnet18(image_shape,n_classes)
-weights_path = 'model.122-0.41.hdf5'
+weights_path = 'resnet34_val_acc_46.hdf5'
 model.load_weights(weights_path)
 
 test_dataset_path = input('\nEnter test dataset folder path:')
 imgs = [f for f in listdir(test_dataset_path)]
 df_imgs = pd.DataFrame(imgs, columns = ["Image"])
 
+result = pd.DataFrame(columns=['Image','Prediction'],index=range(len(imgs)))
+
 for i,img in enumerate(imgs):
     file = test_dataset_path + img
     test_img = image.load_img(file, target_size=(260,504))
     test_img = image.img_to_array(test_img)
     test_img = np.expand_dims(test_img, axis=0)
-    result = model.predict(test_img)
+    predict = model.predict(test_img)
+    result['Image'][i] = img
+    result['Prediction'][i] = meta_df['Car Make'][np.argmax(predict,axis=1)[0]]
+
+print(result)
