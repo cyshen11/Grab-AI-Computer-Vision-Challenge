@@ -3,7 +3,7 @@
 Grab AI Computer Vision Challenge.ipynb shows how I clean, explore the data and train the model.
 I am using ResNet34 model.
 
-Model weight still training in progress. Below is current trained model weight with 40% validation accuracy.
+Model weight still training in progress. Below is current trained model weight with 46% validation accuracy.
 [Model weight link](https://drive.google.com/open?id=1bAsH38O1aY5oWb_GBKGUtHa4Vztj4Jkt)
 
 1. Grab AI Computer Vision Challenge.ipynb shows how to import, clean data and create, train ResNet34 model.
