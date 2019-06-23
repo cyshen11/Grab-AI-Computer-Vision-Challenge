@@ -5,7 +5,7 @@ The CNN architecture used is ResNet with 34 layers.\
 Currently the trained model has 46% validation accuracy.\
 This model is created to participate in Grab's AI Challenge for SEA.
 
-[Link to trained dataset](https://ai.stanford.edu/~jkrause/cars/car_dataset.html)
+[Link to dataset](https://ai.stanford.edu/~jkrause/cars/car_dataset.html)
 
 ## Getting Started
 
