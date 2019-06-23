@@ -7,7 +7,8 @@ This model is created to participate in Grab's AI Challenge for SEA.
 
 ## Getting Started
 
-Download the entire folder as zip into your local machine.
+- Download the entire folder as zip into your local machine.
+- Download [model_weights](https://drive.google.com/open?id=1bAsH38O1aY5oWb_GBKGUtHa4Vztj4Jkt) and place in the previously downloaded folder location
 
 ### Prerequisites
 
